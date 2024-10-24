@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDaily</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> <!-- 引入艺术字体 -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .hero {
+            width: 100%;
+            height: 200px;
+            background-image: url('https://bing.img.run/1920x1080.php'); /* 背景图片 */
+            background-size: cover; /* 图片覆盖 */
+            background-position: center; /* 图片居中 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 48px; 
+            font-family: 'Lobster', cursive;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            text-decoration: none; /* 移除链接下划线 */
+            color: inherit; /* 继承文本颜色 */
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-content h3 {
+            margin: 0 0 10px;
+            font-size: 20px;
+        }
+        .card-content p {
+            margin: 0;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f8f8f8;
+            border-top: 1px solid #ddd;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    JDaily
+</div>
+
+<div class="content">
+    <!-- 10-23 -->
+    <a href="2024-10-23.html" class="card"> 
+        <img src="https://pic.imgdb.cn/item/6718d66ad29ded1a8cd26de5.jpg" alt="资讯1">
+        <div class="card-content">
+            <h3>雪莉夫人森林</h3>
+            <p>雪莉夫人森林和古堡遗迹，新罕布什尔州，美国</p>
+        </div>
+    </a>
+
+    <!-- 10-22 -->
+    <a href="2024-10-22.html" class="card"> 
+        <img src="https://pic.imgdb.cn/item/6718d9b6d29ded1a8cd5cdcb.jpg" alt="资讯2">
+        <div class="card-content">
+            <h3>美国麦当劳汉堡</h3>
+            <p>美国麦当劳汉堡发生大肠杆菌污染事件</p>
+        </div>
+    </a>
+
+    <!-- 10-21 -->
+    <a href="2024-10-21.html" class="card"> 
+        <img src="https://pic.imgdb.cn/item/6718cf55d29ded1a8ccad2c8.jpg" alt="资讯3">
+        <div class="card-content">
+            <h3>2024年10月21日 生物多样性公约缔约方大会</h3>
+            <p>推动“人与自然和谐共生” 生物多样性公约缔约方大会在哥伦比亚开幕</p>
+        </div>
+    </a>
+
+</div>
+
+<footer>
+    <p>© 2024 JDaily(Tommy_jin) - 版权所有</p>
+    <p>联系邮箱: tommy_dwymfyx@163.com</p>
+</footer>
+
+</body>
+</html>
